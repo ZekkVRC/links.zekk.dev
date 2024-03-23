@@ -9,7 +9,7 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
 :root {
     --bgColor: #223344;
     --bgColor2: #090a0f;
-    --accentColor: #69c8ff;
+    --accentColor: #ffffff;
     --font: 'Karla', sans-serif;
     --delay: .3s;
     overflow-y: hidden;
@@ -38,6 +38,8 @@ body {
     display: block;
     margin: 40px auto 20px;
     border-radius: 50%;
+    outline: rgb(165, 159, 255) solid 2px;
+    filter: drop-shadow(0rem 0rem .4rem rgb(79, 155, 255));
     -webkit-tap-highlight-color: transparent;
 }
 
@@ -93,8 +95,8 @@ body {
         background-color: var(--accentColor);
         color: var(--bgColor);
         z-index: 2;
-        outline: rgb(255, 255, 255) solid 2px;
-        filter: drop-shadow(0rem 0rem 1rem rgb(89, 133, 255));
+        outline: rgb(165, 159, 255) solid 2px;
+        filter: drop-shadow(0rem 0rem 1rem rgb(79, 155, 255));
     }
 }
 
