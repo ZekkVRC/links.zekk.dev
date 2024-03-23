@@ -12,9 +12,16 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
     --accentColor: #ffffff;
     --font: 'Karla', sans-serif;
     --delay: .3s;
-    overflow-y: hidden;
+    /* overflow-y: hidden; */
     /* filter: blur(-1.5rem); */
+    scrollbar-width: none;
+    -ms-overflow-style: none;
 }
+
+:root::-webkit-scrollbar {
+    display: none;
+}
+
 
 body {
     margin: 0;
