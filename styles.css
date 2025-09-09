@@ -46,7 +46,7 @@ body {
     margin: 40px auto 20px;
     border-radius: 50%;
     outline: rgb(165, 159, 255) solid 2px;
-    filter: drop-shadow(0rem 0rem .4rem rgb(79, 155, 255));
+    filter: drop-shadow(0rem 0rem .2rem rgb(79, 155, 255));
     -webkit-tap-highlight-color: transparent;
 }
 
