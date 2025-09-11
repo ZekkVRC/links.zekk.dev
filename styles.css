@@ -10,12 +10,20 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
     --bgColor: #223344;
     --bgColor2: #090a0f;
     --accentColor: #ffffff;
+    --dropShadowColor: rgb(79, 155, 255);
+    --outlineColor: rgb(33, 151, 187);
+    --backgroundColor: rgb(0, 20, 36);
+    --dotColor: #0099ff;
+    --edgeColor: #99ccff;
+    --triColor: #0066ff;
+
     --font: 'Karla', sans-serif;
     --delay: .3s;
     /* overflow-y: hidden; */
     /* filter: blur(-1.5rem); */
     scrollbar-width: none;
     -ms-overflow-style: none;
+    filter: hue-rotate(calc(var(--random-degree, 0) * 1deg));
 }
 
 :root::-webkit-scrollbar {
@@ -38,15 +46,29 @@ body {
     position: relative;
 }
 
-#profilePicture, #profilePicture img {
+.linkicon {
+    filter: hue-rotate(calc(var(--random-degree, 0) * -1deg));
+}
+
+#profilePicture {
     position: relative;
     width: 96px;
     height: 96px;
     display: block;
     margin: 40px auto 20px;
     border-radius: 50%;
-    outline: rgb(165, 159, 255) solid 2px;
-    filter: drop-shadow(0rem 0rem .2rem rgb(79, 155, 255));
+    outline: var(--outlineColor) solid 2px;
+    filter: drop-shadow(0rem 0rem .2rem var(--dropShadowColor));
+    -webkit-tap-highlight-color: transparent;
+}
+
+#profilePicture img {
+    position: relative;
+    width: 96px;
+    height: 96px;
+    display: block;
+    margin: 40px auto 20px;
+    border-radius: 50%;
     -webkit-tap-highlight-color: transparent;
 }
 
@@ -102,8 +124,8 @@ body {
         background-color: var(--accentColor);
         color: var(--bgColor);
         z-index: 2;
-        outline: rgb(165, 159, 255) solid 2px;
-        filter: drop-shadow(0rem 0rem 1rem rgb(79, 155, 255));
+        outline: var(--outlineColor) solid 2px;
+        filter: drop-shadow(0rem 0rem 1rem var(--dropShadowColor));
     }
 }
 
